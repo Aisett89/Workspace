@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPersonal_Projects_and_Tutoring.a CMakeFiles/Personal_Projects_and_Tutoring.dir/Personal_Projects_and_Tutoring.cpp.o
+/usr/bin/ranlib libPersonal_Projects_and_Tutoring.a
