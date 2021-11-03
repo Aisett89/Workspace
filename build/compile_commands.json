@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/alexanderisett/Desktop/Workspace/build",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mmacosx-version-min=11.2 -o CMakeFiles/Personal_Projects_and_Tutoring.dir/Personal_Projects_and_Tutoring.cpp.o -c /Users/alexanderisett/Desktop/Workspace/Personal_Projects_and_Tutoring.cpp",
+  "file": "/Users/alexanderisett/Desktop/Workspace/Personal_Projects_and_Tutoring.cpp"
+}
+]
