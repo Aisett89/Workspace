@@ -9,12 +9,21 @@ using std::vector;
 using std::list;
 using std::endl;
 
+
 class YouTubeChannel // user defined datatype that is meant to represent a real life object through programming. 
 {
     public: // access modifier <-- makes these memebers/variables accessible outside of the class. 
         string Name;
         string OwnerName;
         int SubscribersCount;
-    
+        vector<string>PublishedVideoTitles;
 
+        YouTubeChannel(string name, string ownerName)
+        {
+            Name = name;
+            OwnerName = ownerName;
+            SubscribersCount = 1800;
+        }
+        YouTubeChannel();
+        void get_info();
 };

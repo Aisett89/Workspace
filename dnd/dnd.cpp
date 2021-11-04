@@ -12,9 +12,10 @@ using std::vector;
 
 enum menu_choices { mbalance, mdeposit, mwithdraw, exit };
 
-class SOME_CLASS
-{
-
-};
+        int attack(int attack)
+        {
+            Attack = attack 
+            return attack;
+        }
 
 #endif // Fix this. 

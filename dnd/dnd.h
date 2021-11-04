@@ -18,8 +18,20 @@ bool TEST_RETURN()
 class DND
 {
     private:
+    
+    
+    protected:
 
     
     public:
+        int attack(int attack)
+        {
+            Attack = attack 
+            return attack;
+        }
 
-}
+
+};
+
+class Fighter() {} : public DND()
+{}

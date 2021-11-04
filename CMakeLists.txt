@@ -1,11 +1,45 @@
-cmake_minimum_required(VERSION 3.0.0)
-project(Personal_Projects_and_Tutoring VERSION 0.1.0)
+cmake_minimum_required(VERSION 3.8)
 
-include(CTest)
+project("Workspace")
+set (CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall")
+include_directories(inc)
+
+MACRO(SUBDIRLIST result curdir)
+  FILE(GLOB children RELATIVE ${curdir} ${curdir}/*)
+  SET(dirlist "")
+  FOREACH(child ${children})
+    IF(IS_DIRECTORY ${curdir}/${child})
+      LIST(APPEND dirlist ${child})
+    ENDIF()
+  ENDFOREACH()
+  SET(${result} ${dirlist})
+ENDMACRO()
+
+MACRO(HEADER_DIRECTORIES return_list)
+    FILE(GLOB_RECURSE new_list *.h)
+    SET(dir_list "")
+    FOREACH(file_path ${new_list})
+        GET_FILENAME_COMPONENT(dir_path ${file_path} PATH)
+        SET(dir_list ${dir_list} ${dir_path})
+    ENDFOREACH()
+    LIST(REMOVE_DUPLICATES dir_list)
+    SET(${return_list} ${dir_list})
+ENDMACRO()
+
+HEADER_DIRECTORIES(header_list)
+
+include_directories(${header_list})
+
+
+ADD_SUBDIRECTORY(Fun_With_Jake)
+ADD_SUBDIRECTORY(dnd)
+
+
+
+
 enable_testing()
+ADD_SUBDIRECTORY(test)
 
-add_library(Personal_Projects_and_Tutoring Personal_Projects_and_Tutoring.cpp)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+
