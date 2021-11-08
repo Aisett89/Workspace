@@ -33,5 +33,5 @@ class DND
 
 };
 
-class Fighter() {} : public DND()
+class Fighter : public DND dnd;
 {}
