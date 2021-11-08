@@ -1,24 +1,26 @@
-#include<iostream>
-#include <map>
-#include<list>
-#include<vector>
+// Incl-using //
+#include <iostream>
+#include <utility>      
 #include <string>
-#include<algorithm>
+#include <vector>
+#include <algorithm>
+#include <fstream>
+using std::vector;
+using std::pair;
+using std::string;
+using std::make_pair;
+using std::string;
 using std::cout;
 using std::cin;
-using std::string;
-using std::vector;
-using std::list;
 using std::endl;
-using std::map;
+using std::ostream;
+using std::istream;
 using std::pair;
-
 
 // stuff
 string *name;
 int health;
 int level = 1;
-
 
 int attack(int weapon, int attack_bonus, int armor_class); // <-- AC of oponent. 
 int health_potion(int health);
@@ -26,14 +28,14 @@ int health_potion(int health);
 class Bot {};
 
 
-class Player : public Archetypes
+class Player 
 {
-    // name = get_name()?
-    // archetype = Fighter 
-    // map<inventory>
-    // int hit_points;
-    // double armor_class;
-    // attack();
+    name = get_name()?
+    archetype = Fighter 
+    map<inventory>
+    int hit_points;
+    double armor_class;
+    attack();
 };
 
 class Archetypes 

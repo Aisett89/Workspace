@@ -1,13 +1,22 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
+// Incl-using //
+#include <iostream>
+#include <utility>      
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <fstream>
+using std::vector;
+using std::pair;
+using std::string;
+using std::make_pair;
+using std::string;
 using std::cout;
 using std::cin;
-using std::string;
-using std::vector;
-using std::map;
+using std::endl;
+using std::ostream;
+using std::istream;
 
-
+// Header guards
 #ifndef FixTHIS
 #define FixTHIS
 
@@ -15,8 +24,7 @@ using std::map;
 
 int attack(int weapon, int attack_bonus)
 {
-Attack = attack + weapon
-return Attack;
+    
 }
 
 int health_potion(int health) 
